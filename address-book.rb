@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'sinatra/base'
+require 'slim'
 
 class AddressBook < Sinatra::Base
 	get '/' do
-		"heya there"
+		slim :home
 	end
 end
